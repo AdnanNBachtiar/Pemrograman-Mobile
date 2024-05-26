@@ -90,7 +90,7 @@ class _GroceryListState extends State<GroceryList> {
     });
 
     final url = Uri.https('shoppingapps-bb7a4-default-rtdb.firebaseio.com',
-        'shoppingapps.json/${item.id}.json');
+        'shoppingapps/${item.id}.json');
 
     final response = await http.delete(url);
 
